@@ -20,7 +20,7 @@ describe "redis::config" do
     let(:facts) { default_test_facts.merge(:operatingsystem => "Darwin") }
 
     it do
-      should include_class("boxen::config")
+      # should include_class("boxen::config")
 
       should contain_file("/test/boxen/env.d/redis.sh").with_ensure(:absent)
       should contain_file("/Library/LaunchDaemons/dev.redis.plist")
